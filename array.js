@@ -12,19 +12,23 @@ function somar(a){
         
     }
 
-    console.log(`${soma}`)
+    console.log(`Maneira antiga: ${soma}`)
 }
 
 somar(a)
 
 // aogra esta é a maneira mais facil e otimizada de se fazer uma função
 
-arraysoma = (a) => {
+b = [1, 1, 1, 1, 1]
+somando = 0
+arraysoma = (b) => {
 
     for(i = 0; i <= 4; i++){
 
-        soma = soma + a[i]
+        somando = somando + b[i]
     }
 
-    return soma
+    return somando
 }
+const ArraySoma = arraysoma(b)
+console.log(`Maneira otimizada: ${ArraySoma}`)
